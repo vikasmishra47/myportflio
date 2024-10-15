@@ -1,0 +1,393 @@
+/* Basic styling for the entire document */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #2c3e50;
+    color: #ecf0f1;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+header #toggle-mode {
+    background: #34495e;
+    color: #ecf0f1;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Home section styling */
+#home {
+    text-align: center;
+    padding: 50px;
+    background: #ecf0f1;
+}
+
+#home h1 {
+    font-size: 3rem;
+    color: #2c3e50;
+}
+
+#home p {
+    font-size: 1.2rem;
+    color: #34495e;
+}
+
+#home .profile-img {
+    width: 150px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+#home .profile-img:hover {
+    transform: scale(1.1);
+}
+
+#home .social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #2c3e50;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+#home .social-icons a:hover {
+    color: #007BFF;
+}
+
+#home .btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background: #e74c3c;
+    color: #fff;
+    font-size: 1rem;
+    transition: background 0.3s;
+    margin-top: 20px;
+}
+
+#home .btn:hover {
+    background: #c0392b;
+}
+
+/* About section styling */
+#about {
+    padding: 50px;
+    background: #ecf0f1;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2rem;
+    color: #34495e;
+}
+
+#about .profile-img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Skills section styling */
+#skills {
+    padding: 50px;
+    background: #f8f9fa;
+}
+
+#skills h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#skills .skills {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#skills .skill {
+    display: flex;
+    flex-direction: column;
+}
+
+#skills .skill p {
+    font-size: 1.2rem;
+    color: #34495e;
+    margin-bottom: 5px;
+}
+
+#skills .progress {
+    width: 100%;
+    background: #dcdcdc;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#skills .progress-bar {
+    height: 100%;
+    background: #2c3e50;
+    transition: width 0.3s;
+}
+
+/* Certifications section styling */
+#certifications {
+    padding: 50px;
+    background: #ecf0f1;
+}
+
+#certifications h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#certifications .certifications {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#certifications .cert-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s;
+}
+
+#certifications .cert-card:hover {
+    transform: scale(1.05);
+}
+
+#certifications .cert-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#certifications .cert-card h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+#certifications .cert-card p {
+    font-size: 1rem;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+#certifications .cert-card .btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background: #e74c3c;
+    color: #fff;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+#certifications .cert-card .btn:hover {
+    background: #c0392b;
+}
+
+/* Projects section styling */
+#projects {
+    padding: 50px;
+    background: #ecf0f1;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#projects .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#projects .project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    transition: transform 0.3s;
+    width: 300px;
+}
+
+#projects .project-card:hover {
+    transform: scale(1.05);
+}
+
+#projects .project-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#projects .project-card p {
+    font-size: 1rem;
+    color: #34495e;
+}
+
+/* Contact section styling */
+#contact {
+    padding: 50px;
+    background: #f8f9fa;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contact form input,
+#contact form textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact form .btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background: #e74c3c;
+    color: #fff;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+#contact form .btn:hover {
+    background: #c0392b;
+}
+
+#contact .social-icons {
+    margin-top: 20px;
+}
+
+#contact .social-icons a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #2c3e50;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+#contact .social-icons a:hover {
+    color: #007BFF;
+}
+
+/* Footer styling */
+footer {
+    padding: 20px;
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background: #2c3e50;
+    color: #ecf0f1;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+    background: #34495e;
+}
+
+body.dark-mode header #toggle-mode {
+    background: #2c3e50;
+}
+
+body.dark-mode #home,
+body.dark-mode #about,
+body.dark-mode #skills,
+body.dark-mode #projects,
+body.dark-mode #contact,
+body.dark-mode #certifications {
+    background: #2c3e50;
+    color: #ecf0f1;
+}
+
+body.dark-mode #skills .progress {
+    background: #7f8c8d;
+}
+
+body.dark-mode #skills .progress-bar {
+    background: #ecf0f1;
+}
+
+body.dark-mode #projects .project-card,
+body.dark-mode #certifications .cert-card {
+    background: #34495e;
+}
+
+body.dark-mode #contact form input,
+body.dark-mode #contact form textarea {
+    background: #34495e;
+    color: #ecf0f1;
+    border: 1px solid #7f8c8d;
+}
